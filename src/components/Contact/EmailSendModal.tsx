@@ -11,8 +11,8 @@ const EmailSendModal: React.FC<EmailSendModalProps> = ({ isOpen, onClose, status
   const [progressWidth, setProgressWidth] = useState(0);
 
   useEffect(() => {
-     let interval: NodeJS.Timeout;
-    let timeout: NodeJS.Timeout;
+    let interval: NodeJS.Timeout | undefined;
+    let timeout: NodeJS.Timeout | undefined;
 
     const increaseProgress = () => {
       interval = setInterval(() => {

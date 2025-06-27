@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client'
 import { useState } from "react";
 import EmailSendModal from "./EmailSendModal";
@@ -18,7 +19,7 @@ const Contact = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
 
     try {
@@ -47,7 +48,7 @@ const Contact = () => {
     setloading(false);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: any; value: any; }; }) => {
     const { name, value } = e.target;
     setFormData((prevFormData) => ({
       ...prevFormData,
