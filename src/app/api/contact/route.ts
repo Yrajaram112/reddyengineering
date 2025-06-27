@@ -1,6 +1,7 @@
 // import { client } from '@/lib/sanity';
 import nodemailer from 'nodemailer';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function POST(req: { json: () => any; }) {
   try {
     const body = await req.json();
