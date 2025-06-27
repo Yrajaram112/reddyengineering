@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 
-const EmailSendModal = ({ isOpen, onClose, status }) => {
+interface EmailSendModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+  status: string;
+}
+
+const EmailSendModal: React.FC<EmailSendModalProps> = ({ isOpen, onClose, status }) => {
   const [progressWidth, setProgressWidth] = useState(0);
 
   useEffect(() => {
-    let interval;
-    let timeout;
+     let interval: NodeJS.Timeout;
+    let timeout: NodeJS.Timeout;
 
     const increaseProgress = () => {
       interval = setInterval(() => {
