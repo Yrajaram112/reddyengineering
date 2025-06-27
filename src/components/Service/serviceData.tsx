@@ -3,14 +3,22 @@ import { Service } from "@/types/service";
 const serviceData: Service[] = [
   {
     id: 1,
-    title: "Land Surveying",
+    title: "Industrial Structures & Engineering",
     paragraph:
-      "Our Land Surveying department offers Tree & Topographical Surveys, ALTA/NSPS Land Title Surveys, Subdivision Plats, and As-built Surveys. We provide detailed and accurate land data to support informed decisions for both private and public projects.",
-    image: "/images/services/land-surveying.avif",
-    tags: ["surveying", "mapping", "land"],
+      "We deliver structural engineering services for industrial facilities including steel buildings, warehouses, equipment foundations, retaining walls, and structural retrofits. Our designs emphasize safety, efficiency, and code compliance.",
+    image: "/images/services/industrial.avif",
+    tags: ["structures", "industrial", "structural"],
   },
   {
     id: 2,
+    title: "Precast Building Solutions",
+    paragraph:
+      "Our Precast Building Solutions department specializes in innovative and sustainable precast concrete elements for modern construction. We offer custom-designed panels, beams, and wall systems that provide exceptional strength, faster installation, and energy efficiency for both commercial and residential projects.",
+    image: "/images/services/precast-building.png",
+    tags: ["precast", "concrete", "building", "sustainable"],
+  },
+  {
+    id: 3,
     title: "Water Resources Engineering",
     paragraph:
       "We specialize in stormwater management, floodplain analysis, drainage system design, and hydraulic modeling. Our team ensures compliance with environmental standards while providing effective and sustainable solutions to manage water resources.",
@@ -18,7 +26,7 @@ const serviceData: Service[] = [
     tags: ["water", "drainage", "stormwater"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Master Planning",
     paragraph:
       "Our civil engineers provide comprehensive master planning services for residential, commercial, and municipal developments. We assess land use, infrastructure, utility systems, and regulatory constraints to deliver efficient, scalable plans.",
@@ -26,7 +34,7 @@ const serviceData: Service[] = [
     tags: ["planning", "infrastructure", "design"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Site Development & Grading",
     paragraph:
       "We offer full-service site development including grading plans, erosion control, parking layouts, and utility coordination. Our team delivers code-compliant designs with attention to topography and drainage.",
@@ -34,20 +42,12 @@ const serviceData: Service[] = [
     tags: ["site", "grading", "civil"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Roadway & Transportation Engineering",
     paragraph:
       "Reedy Engineering provides roadway alignment, intersection design, traffic flow analysis, and pavement design services. Our expertise supports both public and private transportation projects.",
     image: "/images/services/roadway.avif",
     tags: ["roadway", "transportation", "traffic"],
-  },
-  {
-    id: 6,
-    title: "Industrial Structures & Engineering",
-    paragraph:
-      "We deliver structural engineering services for industrial facilities including steel buildings, warehouses, equipment foundations, retaining walls, and structural retrofits. Our designs emphasize safety, efficiency, and code compliance.",
-    image: "/images/services/industrial.avif",
-    tags: ["structures", "industrial", "structural"],
   },
 ];
 

@@ -13,7 +13,7 @@ const FounderSection = () => {
 
         <div className="flex flex-col md:flex-row items-center gap-10 max-w-5xl mx-auto">
           {/* Founder Image */}
-          <div className="w-full md:w-1/3">
+          {/* <div className="w-full md:w-1/3">
             <Image
               src="/images/people/prabhash.jpg"
               alt="Prabhash Kumar Shah"
@@ -21,15 +21,15 @@ const FounderSection = () => {
               height={300}
               className="rounded-xl shadow-lg object-cover"
             />
-          </div>
+          </div> */}
 
           {/* Founder Details */}
-          <div className="w-full md:w-2/3">
+          <div className="w-full md:w-3/3">
             <h3 className="text-2xl font-semibold text-secondary dark:text-white mb-2">
-              Prabhash Kumar Shah, PE, FE
+              Prabhash Shah, PE
             </h3>
             <p className="text-base text-textBody dark:text-gray-300 mb-4">
-              With over 15 years of experience in structural and civil engineering, Prabhash Kumar Shah leads Reedy Engineering with a commitment to excellence, client satisfaction, and community impact. Licensed as a Professional Engineer (PE) and having cleared the Fundamentals of Engineering (FE), he brings both practical expertise and visionary leadership to every project.
+              With over 15 years of experience in structural and civil engineering, Prabhash Shah leads Reedy Engineering with a commitment to excellence, client satisfaction, and community impact. Licensed as a Professional Engineer (PE), he brings both practical expertise and visionary leadership to every project.
             </p>
 
             {/* Message from Founder */}
