@@ -1,8 +1,7 @@
 'use client'
-import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Providers } from "./providers";
 
