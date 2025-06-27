@@ -1,15 +1,18 @@
 // import { client } from '@/lib/sanity';
+import { NextRequest, NextResponse } from "next/server";
 import nodemailer from 'nodemailer';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export async function POST(req: { json: () => any; }) {
+export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
     const { name, email, phone, company, projectType, message } = body;
 
     // Validate required fields
     if (!name || !email || !phone || !message) {
-        return new Response(JSON.stringify({ error: 'Missing required fields' }), { status: 400 });
+        return NextResponse.json(
+        { error: "Missing required fields" },
+        { status: 400 }
+      );
       }
 
     // // 1. Save to Sanity
